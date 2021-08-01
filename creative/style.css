@@ -15,6 +15,7 @@
 
 html {
     font-size:62.5%; /* turning 1rem = 10px */
+    scroll-behavior: smooth;
 }
 .container {
     width:100%;
@@ -157,7 +158,7 @@ html {
 
 .fa-quote-left {
     font-size: 4rem;
-    color: #f08e0f
+    color: rgba(50,231,255,0.8);
 }
 
 .customer-text {
@@ -172,7 +173,7 @@ html {
 
 .customer-rating i {
     font-size:2rem;
-    color: #f08e0f
+    color: rgba(50,231,255,0.8);
 }
 .customer-img {
     width: 10rem;
@@ -224,7 +225,7 @@ html {
 .team-member-name {
     font-size: 2.3rem;
     font-weight: 700;
-    color: #796717;
+    color: rgba(50,231,255,1);
     margin-top: 2rem;
 }
 
@@ -240,7 +241,7 @@ html {
 }
 
 .projects-btn {
-    background-color: #fab34a;
+    background-color: rgba(50,231,255,1);
     color: #fff;
     padding: 0.5rem 1.5rem;
     border-radius: 5rem;
@@ -275,7 +276,7 @@ html {
 }
 
 .story {
-    background-color: rgba(253,69,69,0.9);
+    background-color: rgba(50,231,255,0.9);
     width:100%;
     height:100%;
     position: absolute;
@@ -315,6 +316,101 @@ html {
 /* END OF SECTION 3 */
 
 /* START OF SECTION 4 */
+.section-4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.form-container {
+    width: 80%;
+    height: 50%;
+    background-color: #e5e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow:  0.3rem 0.3rem 0.4rem #ccc,
+    -0.1rem -0.1rem 0.4rem #ccc;
+    border-radius: 0.5rem;
+    perspective: 100rem;
+}
+
+.form-image {
+    width: 40rem;
+    background-color: rgba(50,231,255,0.8);
+    padding: 5rem;
+    opacity: 0.8;
+    box-shadow: -3rem 3rem 4rem #aaa;
+    border-radius: 0.5rem;
+    transform: rotateY(20deg);
+}
+
+.contact-form {
+    width: 45rem;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 3rem 3rem 4rem #aaa;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin:1rem;
+    padding:1rem;
+    font-size: 1.3rem;
+    letter-spacing:0.1rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd,
+    inset -0.1rem -0.1rem 0.2rem #ddd;
+}
+
+.contact-form textarea {
+    max-height: 15rem;
+    min-height: 10rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgba(50,231,255,0.8);
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #32e7ff;
+}
+
+.copyright {
+    font-size:1.5rem
+}
 /* END OF SECTION 4 */
 
+.scroll-up-btn {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    background-color: rgba(50,231,255, 0.8);
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.scroll-up-btn:hover {
+    background-color: #32e7ff;
+}
