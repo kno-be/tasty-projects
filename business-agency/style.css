@@ -1016,6 +1016,22 @@ padding-left: 10rem;
     .section-1-1-paragraph {
       width: 100%;
     }
+
+    .section-2{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+
+
+    }
+    .section-2-heading {
+      font-size: 3rem;
+
+    }
+
+    .section-2-paragraph {
+      width: 100%;
+    }
   
     .contact-details div {
       width: 18rem;
